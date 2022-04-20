@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:text="Quiz"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="40sp"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:id="@+id/questionnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="10sp"
+        android:hint="Enter Question Number"
+        android:padding="15sp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/quetion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionnumber"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="10sp"
+        android:hint="Enter Question"
+        android:padding="15sp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quetion"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="10sp"
+        android:hint="Enter Answer"
+        android:padding="15sp"
+        android:textColor="@color/black" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer"
+        android:layout_marginHorizontal="80sp"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/teal_200"
+        android:text="ADD" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/updatebuttton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addbutton"
+        android:layout_marginHorizontal="80sp"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/teal_700"
+        android:text="UPDATE" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deletebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatebuttton"
+        android:layout_marginHorizontal="80sp"
+        android:layout_marginTop="10sp"
+        android:backgroundTint="@color/teal_700"
+        android:text="DELETE" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deletebutton"
+        android:layout_marginHorizontal="80sp"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/teal_200"
+        android:text="SUBMIT" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/previewbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitbutton"
+        android:layout_marginHorizontal="80sp"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/teal_700"
+        android:text="PREVIEW" />
+
+
+
+</RelativeLayout>
